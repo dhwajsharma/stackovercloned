@@ -134,31 +134,6 @@ function Index() {
                 />
               </div>
             </div>
-            <div className="question-option">
-              <div className="title">
-                <h3>Tags</h3>
-                <small>
-                  Add up to 5 tags to describe what your question is about
-                </small>
-                {/* <input
-                  value={tag}
-                  onChange={(e) => setTag(e.target.value)}
-                  data-role="tagsinput"
-                  data-tag-trigger="Space"
-                  type="text"
-                  placeholder="e.g. (asp.net-mvc php react json)"
-                /> */}
-
-                <TagsInput
-                  value={tag}
-                  onChange={setTag}
-                  name="fruits"
-                  placeHolder="press enter to add new tag"
-                />
-
-                {/* <ChipsArray /> */}
-              </div>
-            </div>
           </div>
         </div>
 
