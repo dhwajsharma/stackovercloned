@@ -10,8 +10,6 @@ function AllQuestions({ data }) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
 
-  let tags = JSON.parse(data?.tags[0]);
-  // console.log();
   return (
     <div className="all-questions">
       <div className="all-questions-container">
@@ -47,18 +45,6 @@ function AllQuestions({ data }) {
               display: "flex",
             }}
           >
-            {tags.map((_tag) => (
-              <p
-                style={{
-                  margin: "10px 5px",
-                  padding: "5px 10px",
-                  backgroundColor: "#007cd446",
-                  borderRadius: "3px",
-                }}
-              >
-                {_tag}
-              </p>
-            ))}
           </div>
           <div className="author">
             <small>{data.create_at}</small>
