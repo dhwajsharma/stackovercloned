@@ -9,7 +9,7 @@ function Index() {
 
   useEffect(() => {
     async function getQuestion() {
-      await axiosInstance.get("/api/question").then((res) => {
+      await axiosInstance.get("/question").then((res) => {
         setQuestions(res.data.reverse());
         // console.log(res.data)
       });
